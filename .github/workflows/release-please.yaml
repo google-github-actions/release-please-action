@@ -94,5 +94,4 @@ jobs:
         with:
           token: ${{ secrets.ACTIONS_BOT_TOKEN }}
           release-type: node
-          fork: true
           skip-github-release: true

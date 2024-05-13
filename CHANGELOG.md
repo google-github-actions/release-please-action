@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.1](https://github.com/google-github-actions/release-please-action/compare/v4.1.0...v4.1.1) (2024-05-13)
+
+
+### Bug Fixes
+
+* add deprecation warning to workflow run ([#1](https://github.com/google-github-actions/release-please-action/issues/1)) ([edb78cf](https://github.com/google-github-actions/release-please-action/commit/edb78cf884d22d5d991d94144d031fce49cadbea))
+
 ## [4.1.0](https://github.com/google-github-actions/release-please-action/compare/v4.0.3...v4.1.0) (2024-03-11)
 
 

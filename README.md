@@ -1,8 +1,15 @@
-# Release Please Action
+# [DEPRECATED] Release Please Action - please use https://github.com/googleapis/release-please-action
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 Automate releases with Conventional Commit Messages.
+
+## Migration
+
+> Development has moved to https://github.com/googleapis/release-please-action. This repository remains
+here to support legacy references to google-github-actions/release-please-action.
+
+In your GitHub actions workflow, please change `google-github-actions/release-please-action` to `googleapis/release-please-action`.
 
 ## Basic Configuration
 

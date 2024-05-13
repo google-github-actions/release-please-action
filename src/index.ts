@@ -13,7 +13,13 @@
 // limitations under the License.
 
 import * as core from '@actions/core';
-import {GitHub, Manifest, CreatedRelease, PullRequest, VERSION} from 'release-please';
+import {
+  GitHub,
+  Manifest,
+  CreatedRelease,
+  PullRequest,
+  VERSION,
+} from 'release-please';
 
 const DEFAULT_CONFIG_FILE = 'release-please-config.json';
 const DEFAULT_MANIFEST_FILE = '.release-please-manifest.json';
@@ -115,7 +121,10 @@ function loadOrBuildManifest(
 }
 
 export async function main() {
-  core.info(`Running release-please version: ${VERSION}`)
+  core.warning(
+    'google-github-actions/release-please-action is deprecated, please use googleapis/release-please-action instead.'
+  );
+  core.info(`Running release-please version: ${VERSION}`);
   const inputs = parseInputs();
   const github = await getGitHubInstance(inputs);
 
@@ -207,6 +216,6 @@ function outputPRs(prs: (PullRequest | undefined)[]) {
 
 if (require.main === module) {
   main().catch(err => {
-    core.setFailed(`release-please failed: ${err.message}`)
-  })
+    core.setFailed(`release-please failed: ${err.message}`);
+  });
 }
